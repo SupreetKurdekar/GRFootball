@@ -1,6 +1,11 @@
 import numpy as np
 from mpi4py import MPI
-
+###########################################
+#Code to calculate output of step(subset of episode) in parallel
+#Input = nparray(dim = no. of episodes per function evaluation
+#Output = Ndim List (Output state of every step in the same order as input)
+#Substitute your objective function in place of jk in line 26
+###########################################
 def jk(input):
     return np.ones(500)
 def objfunc(input):
